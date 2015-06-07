@@ -30,13 +30,9 @@ startPlayAudioFile使用如下
     [audioPlayer startPlayAudioFile:[PLAudioPath recordPathOriginToAMR]
                        updateMeters:^(float meters){
                            //实时返回播放时声音的平均功率
-                           
                        }
                                  success:^{
                                      // 播放成功
-
-                                    
-
                                  } failed:^(NSError *error) {
                                      // 播放失败
                                  } ];
@@ -69,21 +65,12 @@ startRecordWithFilePath使用如下
     [audioRecorder startRecordWithFilePath:[PLAudioPath recordPathOrigin]
                                    updateMeters:^(float meters){
                                        //实时返回录制时声音的平均功率
-
-                                       
                                    }
                                         success:^(NSData *recordData){
                                             //录音成功
-                                            
-
-                                            
                                         }
                                          failed:^(NSError *error){
                                                   //录音失败
-                                             
-
-                                             
-                                             
                                          }];
                                         
                                         
